@@ -3,7 +3,7 @@ FROM docker
 ENV HOME /
 # https://hub.docker.com/r/sbani/google-gloud-sdk/
 RUN apk add --no-cache --virtual .build-deps \
-        curl \
+		curl \
 		bash \
 	&& apk add --no-cache --virtual .cloudsdk-rundeps \
 		openssh-client \
